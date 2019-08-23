@@ -1,2 +1,2 @@
-# service
- car service
+My final IT Academy project .
+The project contained : the database with 3 joined tables, communication of application with database(realized through the PDO library),completed through OOP. Theme was a car service web application, which was used to book the term car service to users who registered their profile on the application . Since this is the first version of the application, I have many more ideas to implement. 
