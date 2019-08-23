@@ -1,0 +1,172 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing:border-box;
+}
+
+body{
+	font-family: 'DM Serif Display',Serif;
+	display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('https://images.pexels.com/photos/1246959/pexels-photo-1246959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//HOME PAGE
+#autoservis-box{
+    color:#f5f5f5;
+    text-align: center;
+}
+#autoservis-title{
+    text-transform: capitalize;
+    font-size: 60px;
+    color: #f5f5f5;
+}
+
+.autoservis-underline{
+    width:250px;
+    margin:10px auto;
+    border: 3px solid #2b98f0;
+}
+
+.autoservis-subtitle{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#autoservis-box a,.back{
+    display: inline-block; /*zbog paddinga*/
+    padding: 10px;
+    margin-left: 40px;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+    background: #2b98f0;
+    border:3px solid #2b98f0;
+    transition: background 3s ease, border 0.5s ease;
+}
+#autoservis-box a:hover,.back:hover, #container button[type=submit]:hover,.Logout:hover ,#container input[type=submit]{
+    background:transparent;
+    border: 3px solid #f5f5f5;
+    cursor: pointer;
+}
+
+
+
+//LOGIN-SIGN-UP
+#container{
+display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  width:100%;
+}
+
+#container form{
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    margin:20px;
+    padding:10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#container form h1{
+    text-transform: uppercase;
+
+}
+
+#container input ,#container select{
+    width:100%;
+    margin: 10px auto;
+    padding:20px;
+    border-radius: 4px;
+    border: 3px solid lightblue;
+    text-align: center;
+
+}
+#container button[type=submit],.Logout, #container input[type=submit]{
+    display: inline-block; /*zbog paddinga*/
+    padding: 10px;
+    margin:10px;
+    justify-content: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+    background: #2b98f0;
+    border:3px solid #2b98f0;
+    transition: background 3s ease, border 0.5s ease;
+}
+
+#container a,#container a:visited{
+    color:#000;
+    text-decoration: none;
+}
+
+
+
+//SERVICE
+#service {
+  padding: 60px 0;
+}
+.service-container ,.service-containera{
+  max-width: 95vw;
+  margin: 0 auto;
+
+}
+.service-item {
+  text-align: center;
+  margin: 20px 0;
+  background-color:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+
+}
+.service-item h1{
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin: 30px 0;
+  color: blue;
+  text-transform: uppercase;
+}
+.service-item a,.service-item a:visited {
+    text-decoration: none;
+    color:blue;
+}
+.service-item h1 a{
+  background-color: #f5f5f5;
+}
+.service-item p {
+  width: 75%;
+  margin: 0 auto;
+  color: #e0e2db;
+}
+
+@media screen and (min-width:576px) {
+  .service-container, .service-containera {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+
+  }
+  .service-containera {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+
+
